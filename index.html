@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Matthew Seto — UGC Creator</title>
+  <meta name="description" content="Matthew Seto — UGC creator making scroll-stopping short-form content for brands." />
+  <meta property="og:title" content="Matthew Seto — UGC Creator" />
+  <meta property="og:description" content="Short-form content built to stop the scroll and move people to buy." />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%230b0b0b'/><text x='50%' y='56%' font-family='Arial' font-weight='900' font-size='30' fill='white' text-anchor='middle' dominant-baseline='middle'>MS</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // Animations only switch on when JS runs; a safety timer always reveals the page.
+    document.documentElement.classList.add("js");
+    setTimeout(function () { if (!window.__booted) document.documentElement.classList.add("force-loaded"); }, 3500);
+  </script>
+</head>
+<body>
+
+  <!-- Intro loader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__name"><span data-site="name">Matthew Seto</span></div>
+    <div class="loader__bar"><span></span></div>
+  </div>
+
+  <!-- Custom cursor (desktop only) -->
+  <div class="cursor" aria-hidden="true"><span class="cursor__label">Play</span></div>
+
+  <!-- Header -->
+  <header class="top" id="top">
+    <div class="top__id">
+      <a href="#top" class="top__name" data-site="name">Matthew Seto</a>
+      <p class="top__time muted">Local time — <span class="clock" data-clock>00:00</span> <span data-site="city"></span></p>
+    </div>
+    <p class="top__bio muted" data-bio></p>
+  </header>
+
+  <!-- Sticky nav -->
+  <nav class="nav" aria-label="Primary">
+    <div class="nav__inner">
+      <span class="nav__status"><i></i><span data-site="available"></span></span>
+      <a href="#feed" class="nav__link is-active">Feed</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#brands" class="nav__link">Brands</a>
+      <a href="#services" class="nav__link">Services</a>
+      <a href="#contact" class="nav__link">Contact</a>
+      <span class="nav__indicator" aria-hidden="true"></span>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero / intro statement -->
+    <section class="hero" id="feed">
+      <div class="hero__side">
+        <p class="eyebrow">(01) Feed</p>
+      </div>
+      <h1 class="hero__title" data-scrub>
+        Content
+        <span class="chip chip--phone" aria-hidden="true">
+          <svg viewBox="0 0 40 56"><rect x="3" y="2" width="34" height="52" rx="8" fill="#0b0b0b"/><rect x="7" y="8" width="26" height="40" rx="4" fill="url(#g1)"/><circle cx="20" cy="51" r="1.6" fill="#555"/><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff5f6d"/><stop offset="1" stop-color="#ffc371"/></linearGradient></defs><path d="M17 22l9 6-9 6z" fill="#fff"/></svg>
+        </span>
+        that feels native to the feed, made for brands
+        <span class="chip chip--heart" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#ff2d55"/><path d="M24 35s-10-6.2-10-13.2A5.8 5.8 0 0124 18a5.8 5.8 0 0110 3.8C34 28.8 24 35 24 35z" fill="#fff"/></svg>
+        </span>
+        people actually love — and built to
+        <span class="chip chip--spark" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M24 2l5 17 17 5-17 5-5 17-5-17-17-5 17-5z" fill="#ffcc00"/></svg>
+        </span>
+        stop the scroll.
+      </h1>
+    </section>
+
+    <!-- Filters -->
+    <div class="filters" role="tablist" aria-label="Filter work" data-filters></div>
+
+    <!-- Feed grid -->
+    <section class="feed" aria-label="Work feed">
+      <div class="grid" data-grid></div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats" aria-label="Results">
+      <div class="stats__grid" data-stats></div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="about__side">
+        <p class="eyebrow" data-reveal>(02) About</p>
+        <div class="portrait" data-reveal>
+          <img class="portrait__img" src="assets/portrait.jpg" alt="Matthew Seto at night in downtown Toronto, with the CN Tower behind him" width="899" height="1200" loading="lazy" decoding="async" />
+        </div>
+      </div>
+      <div class="about__body">
+        <p class="lead" data-reveal>
+          Hi, I'm <strong data-site="name">Matthew Seto</strong>. I make short-form videos and photos that
+          <strong>look and sound like a real person</strong> recommending something they love — because that's what they are.
+        </p>
+        <p class="muted big" data-reveal>
+          I have always been interested in content creation and social media, I started with AMV's and editing on after effects
+          then created short form travel style videos on my trips. Got into UGC this year and have generated over 4.4M organic views on my content and have worked with multiple brands to create 
+          content for them.
+        </p>
+        <ul class="facts" data-reveal>
+          <li><span class="muted">Based in</span><span data-site="city"></span></li>
+          <li><span class="muted">Niches</span><span> Tech, Lifestyle, Study</span></li>
+          <li><span class="muted">Formats</span><span>9:16, 4:5, 1:1, 16:9</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Brands marquee -->
+    <section class="brands" id="brands">
+      <div class="section-head">
+        <p class="eyebrow" data-reveal>(03) Brands</p>
+        <h2 class="h2" data-reveal>Trusted by brands big and small.</h2>
+      </div>
+      <div class="marquee" data-marquee>
+        <div class="marquee__track"></div>
+      </div>
+      <div class="marquee marquee--reverse" data-marquee>
+        <div class="marquee__track"></div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+      <div class="section-head">
+        <p class="eyebrow" data-reveal>(04) Services</p>
+        <h2 class="h2" data-reveal>What I make.</h2>
+      </div>
+      <ol class="svc" data-services></ol>
+    </section>
+  </main>
+
+  <!-- Contact / footer -->
+  <footer class="contact" id="contact">
+    <div class="contact__inner">
+      <p class="eyebrow eyebrow--light" data-reveal>(05) Contact</p>
+      <h2 class="contact__title" data-reveal>
+        <span class="line"><span>Let's make</span></span>
+        <span class="line"><span>something <em>that sells.</em></span></span>
+      </h2>
+      <button class="mail" data-copy-email data-reveal>
+        <span class="mail__text" data-site="email"></span>
+        <span class="mail__hint">Click to copy</span>
+      </button>
+      <div class="contact__row" data-reveal>
+        <ul class="socials" data-socials></ul>
+        <a href="#top" class="totop">Back to top ↑</a>
+      </div>
+    </div>
+    <div class="bigname" aria-hidden="true"><span data-site="name">Matthew Seto</span></div>
+    <p class="copyright">© <span data-year></span> <span data-site="name">Matthew Seto</span>. All rights reserved.</p>
+  </footer>
+
+  <!-- Detail modal -->
+  <div class="modal" data-modal aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal__close" data-close aria-label="Close">×</button>
+      <div class="modal__media" data-modal-media></div>
+      <div class="modal__info">
+        <p class="eyebrow" data-modal-meta></p>
+        <h3 class="modal__title" id="modal-title" data-modal-title></h3>
+        <p class="muted" data-modal-brand></p>
+        <dl class="metrics" data-modal-metrics></dl>
+        <div class="modal__actions">
+          <a href="#contact" class="btn" data-close>Work with me →</a>
+          <a href="#" class="btn btn--ghost" data-modal-link target="_blank" rel="noopener" hidden>View on Instagram ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" data-toast>Email copied ✓</div>
+
+  <script src="content.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
